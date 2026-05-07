@@ -60,18 +60,18 @@ SEMANTIC_SCHOLAR_API_KEY=...
 
 ```mermaid
 flowchart LR
-  userInput[UserInput] --> entrypoint[Entrypoint(main.pyOrUI)]
-  entrypoint --> orchestrator[Orchestrator]
-  orchestrator --> inputGuardrail[InputGuardrail]
-  inputGuardrail --> plannerAgent[PlannerAgent]
-  plannerAgent --> researcherAgent[ResearcherAgent]
-  researcherAgent --> toolWeb[web_search]
-  researcherAgent --> toolPaper[paper_search]
-  researcherAgent --> writerAgent[WriterAgent]
-  writerAgent --> citationTool[citation_tool]
-  writerAgent --> criticAgent[CriticAgent]
-  criticAgent --> outputGuardrail[OutputGuardrail]
-  outputGuardrail --> finalResponse[FinalResponse]
+  userInput["UserInput"] --> entrypoint["Entrypoint (main.py or UI)"]
+  entrypoint --> orchestrator["Orchestrator"]
+  orchestrator --> inputGuardrail["InputGuardrail"]
+  inputGuardrail --> plannerAgent["PlannerAgent"]
+  plannerAgent --> researcherAgent["ResearcherAgent"]
+  researcherAgent --> toolWeb["web_search"]
+  researcherAgent --> toolPaper["paper_search"]
+  researcherAgent --> writerAgent["WriterAgent"]
+  writerAgent --> citationTool["citation_tool"]
+  writerAgent --> criticAgent["CriticAgent"]
+  criticAgent --> outputGuardrail["OutputGuardrail"]
+  outputGuardrail --> finalResponse["FinalResponse"]
 ```
 
 ### Component Layout
@@ -130,12 +130,12 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-  querySet[data/example_queries.json] --> evaluator[src/evaluation/evaluator.py]
-  evaluator --> orchestratorPath[src/orchestrator.py]
-  orchestratorPath --> responses[GeneratedResponses]
-  responses --> judge[src/evaluation/judge.py]
-  judge --> metrics[ScoresAndAnalysis]
-  metrics --> outputReports[outputs/evaluation_*.json]
+  querySet["data/example_queries.json"] --> evaluator["src/evaluation/evaluator.py"]
+  evaluator --> orchestratorPath["src/orchestrator.py"]
+  orchestratorPath --> responses["GeneratedResponses"]
+  responses --> judge["src/evaluation/judge.py"]
+  judge --> metrics["ScoresAndAnalysis"]
+  metrics --> outputReports["outputs/evaluation_*.json"]
 ```
 
 ## Run Modes

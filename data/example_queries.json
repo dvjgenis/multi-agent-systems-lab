@@ -1,0 +1,349 @@
+[
+  {
+    "id": 1,
+    "query": "What are the key principles of explainable AI for novice users?",
+    "category": "explainable_ai",
+    "expected_topics": [
+      "transparency",
+      "interpretability",
+      "user understanding",
+      "trust"
+    ],
+    "ground_truth": "Explainable AI for novices should focus on transparency, simple visualizations, interactive explanations, and building user trust through understandable model behavior.",
+    "expected_sources": [
+      "academic papers on XAI",
+      "HCI research on AI transparency",
+      "user studies"
+    ]
+  },
+  {
+    "id": 2,
+    "query": "How has AR usability evolved in the past 5 years?",
+    "category": "ar_usability",
+    "expected_topics": [
+      "interaction techniques",
+      "user experience",
+      "hardware improvements",
+      "application domains"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "recent AR research papers",
+      "CHI conference proceedings",
+      "industry reports"
+    ]
+  },
+  {
+    "id": 3,
+    "query": "What are ethical considerations in using AI for education?",
+    "category": "ai_ethics",
+    "expected_topics": [
+      "bias",
+      "privacy",
+      "accessibility",
+      "transparency",
+      "student autonomy"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "ethics papers",
+      "educational technology research",
+      "policy documents"
+    ]
+  },
+  {
+    "id": 4,
+    "query": "Compare different approaches to measuring user experience in mobile applications",
+    "category": "ux_measurement",
+    "expected_topics": [
+      "questionnaires",
+      "analytics",
+      "user testing",
+      "physiological measures"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "UX research papers",
+      "methodological papers",
+      "case studies"
+    ]
+  },
+  {
+    "id": 5,
+    "query": "What are the latest developments in conversational AI for healthcare?",
+    "category": "conversational_ai",
+    "expected_topics": [
+      "chatbots",
+      "patient interaction",
+      "clinical decision support",
+      "privacy concerns"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "medical informatics papers",
+      "healthcare AI research",
+      "clinical studies"
+    ]
+  },
+  {
+    "id": 6,
+    "query": "How do design patterns for accessibility differ across web and mobile platforms?",
+    "category": "accessibility",
+    "expected_topics": [
+      "screen readers",
+      "touch interfaces",
+      "WCAG guidelines",
+      "responsive design"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "accessibility guidelines",
+      "comparative studies",
+      "design pattern libraries"
+    ]
+  },
+  {
+    "id": 7,
+    "query": "What are best practices for visualizing uncertainty in data displays?",
+    "category": "data_visualization",
+    "expected_topics": [
+      "visual encoding",
+      "uncertainty representation",
+      "user comprehension",
+      "design guidelines"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "visualization research",
+      "perceptual studies",
+      "design guidelines"
+    ]
+  },
+  {
+    "id": 8,
+    "query": "How can voice interfaces be designed for elderly users?",
+    "category": "voice_interfaces",
+    "expected_topics": [
+      "age-related challenges",
+      "speech recognition",
+      "error handling",
+      "user preferences"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "aging and technology research",
+      "voice UI papers",
+      "user studies with elderly"
+    ]
+  },
+  {
+    "id": 9,
+    "query": "What are emerging trends in AI-driven prototyping tools?",
+    "category": "ai_prototyping",
+    "expected_topics": [
+      "generative design",
+      "automation",
+      "designer collaboration",
+      "tool capabilities"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "design tools research",
+      "AI in design papers",
+      "industry tools and reviews"
+    ]
+  },
+  {
+    "id": 10,
+    "query": "How do cultural factors influence mobile app design?",
+    "category": "cross_cultural_design",
+    "expected_topics": [
+      "localization",
+      "cultural dimensions",
+      "user preferences",
+      "design adaptations"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "cross-cultural HCI research",
+      "cultural studies",
+      "international design case studies"
+    ]
+  },
+  {
+    "id": 11,
+    "query": "What are the challenges and solutions for designing interfaces for users with motor impairments?",
+    "category": "accessibility_motor",
+    "expected_topics": [
+      "motor impairments",
+      "input methods",
+      "assistive technologies",
+      "design adaptations",
+      "usability testing"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "accessibility research",
+      "assistive technology papers",
+      "user studies with motor impairments"
+    ]
+  },
+  {
+    "id": 12,
+    "query": "How do users perceive and interact with AI-generated content in creative tools?",
+    "category": "ai_creativity",
+    "expected_topics": [
+      "user perception",
+      "creativity support",
+      "AI collaboration",
+      "trust and control",
+      "user studies"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "creativity support tools research",
+      "AI-HCI papers",
+      "user perception studies"
+    ]
+  },
+  {
+    "id": 13,
+    "query": "What are effective methods for conducting remote user research?",
+    "category": "remote_research",
+    "expected_topics": [
+      "remote usability testing",
+      "online surveys",
+      "video conferencing tools",
+      "asynchronous methods",
+      "challenges and solutions"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "HCI methodology papers",
+      "remote research studies",
+      "tool evaluations"
+    ]
+  },
+  {
+    "id": 14,
+    "query": "How can gamification be effectively applied to improve user engagement in educational applications?",
+    "category": "gamification",
+    "expected_topics": [
+      "game mechanics",
+      "motivation theory",
+      "educational outcomes",
+      "design patterns",
+      "evaluation methods"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "gamification research",
+      "educational technology papers",
+      "engagement studies"
+    ]
+  },
+  {
+    "id": 15,
+    "query": "What are the privacy implications of using eye-tracking technology in user interfaces?",
+    "category": "privacy_eyetracking",
+    "expected_topics": [
+      "privacy concerns",
+      "data collection",
+      "user consent",
+      "ethical considerations",
+      "regulatory compliance"
+    ],
+    "ground_truth": null,
+    "expected_sources": [
+      "privacy research",
+      "eye-tracking papers",
+      "ethics and HCI research"
+    ]
+  }
+  ,
+    {
+      "id": 16,
+      "query": "What methods improve trust calibration when presenting AI recommendations to end users?",
+      "category": "trust_calibration",
+      "expected_topics": [
+        "explainability",
+        "uncertainty communication",
+        "user studies",
+        "calibration techniques"
+      ],
+      "ground_truth": null,
+      "expected_sources": [
+        "HCI trust papers",
+        "explainability literature",
+        "user study reports"
+      ]
+    },
+    {
+      "id": 17,
+      "query": "How can multimodal interfaces be evaluated for accessibility across sensory impairments?",
+      "category": "multimodal_accessibility",
+      "expected_topics": [
+        "evaluation metrics",
+        "user sampling",
+        "assistive tech",
+        "cross-modal compensation"
+      ],
+      "ground_truth": null,
+      "expected_sources": [
+        "accessibility evaluation papers",
+        "multimodal interaction research",
+        "case studies"
+      ]
+    },
+    {
+      "id": 18,
+      "query": "What are reproducible workflows for UX experiments in mobile HCI research?",
+      "category": "ux_reproducibility",
+      "expected_topics": [
+        "experiment design",
+        "data sharing",
+        "pre-registration",
+        "analysis pipelines"
+      ],
+      "ground_truth": null,
+      "expected_sources": [
+        "methodology papers",
+        "open science resources",
+        "example repositories"
+      ]
+    },
+    {
+      "id": 19,
+      "query": "Survey recent progress in few-shot prompting techniques for creative writing assistants.",
+      "category": "few_shot_prompting",
+      "expected_topics": [
+        "prompt engineering",
+        "evaluation metrics",
+        "creative generation",
+        "fine-tuning vs prompting"
+      ],
+      "ground_truth": null,
+      "expected_sources": [
+        "NLP papers",
+        "prompting tutorials",
+        "recent workshop proceedings"
+      ]
+    },
+    {
+      "id": 20,
+      "query": "What evaluation protocols exist for measuring conversational AI helpfulness and safety?",
+      "category": "conversational_evaluation",
+      "expected_topics": [
+        "helpfulness metrics",
+        "safety benchmarks",
+        "human evaluation",
+        "automated metrics"
+      ],
+      "ground_truth": null,
+      "expected_sources": [
+        "evaluation benchmark papers",
+        "conversational AI research",
+        "policy documents"
+      ]
+    }
+]

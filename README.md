@@ -1,30 +1,34 @@
+<div align="center">
+
 # Multi-Agent Research System
 
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
-![License](https://img.shields.io/badge/license-Apache--2.0-green)
-![Status](https://img.shields.io/badge/status-portfolio_ready-success)
+[![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green?logo=apache&logoColor=white)](LICENSE)
+[![Status](https://img.shields.io/badge/status-portfolio%20ready-success)](#)
+[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![LangGraph](https://img.shields.io/badge/orchestration-LangGraph-1C3C3C)](https://www.langchain.com/langgraph)
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=520&lines=Plan+%E2%86%92+Research+%E2%86%92+Write+%E2%86%92+Critique;Tool-augmented+retrieval+%2B+safety+guardrails;Offline+benchmarking+with+LLM-as-a-Judge" alt="Typing SVG" />
 
 A production-style multi-agent research assistant that plans, investigates, synthesizes, critiques, and safety-checks responses before returning final output with citations.
+
+[Quick Start](#quick-start) · [Architecture](#architecture) · [Run Modes](#run-modes) · [Evaluation](#evaluation-and-metrics) · [Config](#configuration)
+
+</div>
+
+---
 
 ## Why This Project
 
 This project demonstrates practical multi-agent orchestration patterns for:
 
-- staged task decomposition (`plan -> research -> write -> critique`)
-- tool-augmented retrieval (web + academic sources)
-- safety guardrails on both input and output
-- iterative quality improvement with a critic loop
-- offline benchmarking via LLM-as-a-Judge evaluation
-
-## Quick Navigation
-
-- [Quick Start](#quick-start)
-- [Architecture](#architecture)
-- [Run Modes](#run-modes)
-- [Evaluation](#evaluation-and-metrics)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [Before You Push](#before-you-push)
+| | Pattern |
+|---|---|
+| 🧩 | Staged task decomposition (`plan → research → write → critique`) |
+| 🔎 | Tool-augmented retrieval (web + academic sources) |
+| 🛡️ | Safety guardrails on both input and output |
+| 🔁 | Iterative quality improvement with a critic loop |
+| 📊 | Offline benchmarking via LLM-as-a-Judge evaluation |
 
 ## Quick Start
 
@@ -143,8 +147,6 @@ flowchart LR
 
 ## Run Modes
 
-The entrypoint supports these modes:
-
 ```bash
 python main.py --mode cli
 python main.py --mode web
@@ -153,65 +155,63 @@ python main.py --mode autogen
 python main.py --mode sequential
 ```
 
-- `cli`: terminal interface with traces and safety indicators
-- `web`: Streamlit interface for interactive exploration
-- `evaluate`: benchmark against query set with judge scoring
-- `autogen`: run AutoGen-driven orchestration example
-- `sequential`: run the direct sequential orchestrator path
+| Mode | Description |
+|------|-------------|
+| `cli` | Terminal interface with traces and safety indicators |
+| `web` | Streamlit interface for interactive exploration |
+| `evaluate` | Benchmark against query set with judge scoring |
+| `autogen` | AutoGen-driven orchestration example |
+| `sequential` | Direct sequential orchestrator path |
 
 <details>
 <summary><strong>Sequential vs AutoGen</strong></summary>
 
-- Use `Sequential Orchestrator` for easier debugging and deterministic traces.
-- Use `AutoGen Orchestrator` for richer multi-agent conversational dynamics.
+- Use **Sequential Orchestrator** for easier debugging and deterministic traces.
+- Use **AutoGen Orchestrator** for richer multi-agent conversational dynamics.
 
 </details>
 
 ## Evaluation and Metrics
 
-Run evaluation:
-
 ```bash
 python main.py --mode evaluate
 ```
 
-Outputs are written to `outputs/`:
+Outputs land in `outputs/`:
 
-- `evaluation_*.json`: full per-query results and criterion scores
-- `evaluation_summary_*.txt`: aggregated metrics and distributions
+- `evaluation_*.json` — full per-query results and criterion scores
+- `evaluation_summary_*.txt` — aggregated metrics and distributions
 
-The default criteria in `config.yaml` are:
+Default criteria in `config.yaml`:
 
-- relevance
-- evidence_quality
-- factual_accuracy
-- safety_compliance
-- clarity
+`relevance` · `evidence_quality` · `factual_accuracy` · `safety_compliance` · `clarity`
 
-Detailed instructions: `docs/HOW_TO_RUN_EVALUATION.md`.
+Detailed instructions: [`docs/HOW_TO_RUN_EVALUATION.md`](docs/HOW_TO_RUN_EVALUATION.md)
 
 ## Configuration
 
-Primary controls live in `config.yaml`:
+Primary controls live in [`config.yaml`](config.yaml):
 
-- `system`: project/topic metadata, max iterations, timeout
-- `agents`: per-agent roles, enable flags, and optional custom prompts
-- `models`: default and judge model/provider settings
-- `tools`: web and paper search providers and limits
-- `safety`: violation categories and handling strategy
-- `evaluation`: test query count and weighted criteria
-- `logging`: runtime and safety log destinations
+| Key | Purpose |
+|-----|---------|
+| `system` | Project/topic metadata, max iterations, timeout |
+| `agents` | Per-agent roles, enable flags, optional custom prompts |
+| `models` | Default and judge model/provider settings |
+| `tools` | Web and paper search providers and limits |
+| `safety` | Violation categories and handling strategy |
+| `evaluation` | Test query count and weighted criteria |
+| `logging` | Runtime and safety log destinations |
 
 ## Project Structure
 
 ```text
 .
 ├── src/
-│   ├── agents/
-│   ├── evaluation/
-│   ├── guardrails/
-│   ├── tools/
-│   ├── ui/
+│   ├── agents/          # planner, researcher, writer, critic
+│   ├── evaluation/      # LLM-as-a-Judge benchmarking
+│   ├── guardrails/      # input / output safety
+│   ├── tools/           # web, paper, citation
+│   ├── ui/              # CLI + Streamlit
 │   ├── orchestrator.py
 │   └── autogen_orchestrator.py
 ├── data/
@@ -227,20 +227,16 @@ Primary controls live in `config.yaml`:
 
 - Install local security hooks: `./scripts/install-hooks.sh`
 - Run security checks: `./scripts/test-security.sh`
-- Logs:
-  - `logs/system.log`
-  - `logs/safety_events.log`
+- Logs: `logs/system.log` · `logs/safety_events.log`
 
 ## Before You Push
 
-Use this checklist for a clean public commit:
-
-- `.env` is local-only and never committed
-- noisy local files are ignored (`.DS_Store`, virtual envs, cache files)
-- docs links and Mermaid diagrams render correctly on GitHub
-- one smoke run succeeds (for example `python main.py --mode sequential`)
-- evaluation docs and README stay consistent
+- [ ] `.env` is local-only and never committed
+- [ ] noisy local files are ignored (`.DS_Store`, virtual envs, cache)
+- [ ] docs links and Mermaid diagrams render correctly on GitHub
+- [ ] one smoke run succeeds (e.g. `python main.py --mode sequential`)
+- [ ] evaluation docs and README stay consistent
 
 ## License
 
-Licensed under Apache 2.0. See `LICENSE`.
+Licensed under [Apache 2.0](LICENSE).

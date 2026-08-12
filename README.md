@@ -7,9 +7,13 @@
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![LangGraph](https://img.shields.io/badge/orchestration-LangGraph-1C3C3C)](https://www.langchain.com/langgraph)
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=520&lines=Plan+%E2%86%92+Research+%E2%86%92+Write+%E2%86%92+Critique;Tool-augmented+retrieval+%2B+safety+guardrails;Offline+benchmarking+with+LLM-as-a-Judge" alt="Typing SVG" />
+
 **TL;DR — One sentence:** A production-style multi-agent research assistant that plans, searches the web/papers, writes an answer with citations, critiques itself, and runs safety checks — with CLI, Streamlit UI, and offline LLM-as-a-Judge evaluation.
 
 **Why it matters:** “Chat with an LLM” is easy. Shipping a *system* of specialized agents with tools, guardrails, and measurable quality is the hard part. This lab shows that full loop in one runnable codebase.
+
+**Author:** Dulf Vincent Genis
 
 [Quick start](#quick-start) · [Architecture](#architecture) · [Run modes](#run-modes) · [Evaluation](#evaluation-and-metrics)
 

@@ -13,8 +13,6 @@
 
 **Why it matters:** “Chat with an LLM” is easy. Shipping a *system* of specialized agents with tools, guardrails, and measurable quality is the hard part. This lab shows that full loop in one runnable codebase.
 
-**Author:** Dulf Vincent Genis
-
 [Quick start](#quick-start) · [Architecture](#architecture) · [Run modes](#run-modes) · [Evaluation](#evaluation-and-metrics)
 
 </div>
